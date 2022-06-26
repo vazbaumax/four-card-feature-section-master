@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  /* Primary Colors */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* Neutral Colors */
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--very-light-gray);
+}
+
+.wrapper {
+  width: 375px;
+}
+
+.four-card-cmpnt {
+  width: 100%;
+  padding: 76px 32px;
+}
+
+.four-card-cmpnt__texts {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.four-card-cmpnt__texts__title {
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 29px;
+  letter-spacing: 0.01rem;
+  color: var(--very-dark-blue);
+  margin-bottom: 5px;
+}
+
+.four-card-cmpnt__texts__title--black {
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.four-card-cmpnt__texts__description {
+  line-height: 25px;
+  letter-spacing: 0.01rem;
+  color: var(--grayish-blue);
+}
+
+.four-card-cmpnt__cards__card {
+  height: 222px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px var(--grayish-blue);
+  border-top: 5px solid;
+  margin-bottom: 25px;
+  padding: 25px 28px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  line-height: 25px;
+  color: var(--grayish-blue);
+}
+
+.four-card-cmpnt__cards__card__title {
+  color: var(--very-dark-blue);
+  margin-bottom: 5px;
+}
+
+.four-card-cmpnt__cards__card__icon {
+  width: 56px;
+  align-self: flex-end;
+  font-weight: 200;
+}
+
+#supervisor {
+  border-color: var(--cyan);
+}
+
+#teambuilder {
+  border-color: var(--red);
+}
+
+#karma {
+  border-color: var(--orange);
+}
+
+#calculator {
+  border-color: var(--blue);
+}
+
+
+/* ------ Desktop ------ */
+
+@media(min-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+  }
+
+  .four-card-cmpnt {
+    width: 100%;
+    padding: 80px 164px;
+  }
+
+  .four-card-cmpnt__texts {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .four-card-cmpnt__texts__title {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  .four-card-cmpnt__texts__description {
+    text-align: center;
+    font-size: 1.1rem;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .four-card-cmpnt__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .four-card-cmpnt__cards__card {
+    width: 350px;
+    height: 250px;
+    padding: 27px 33px;
+    margin: 15px 10px;
+  }
+
+  .four-card-cmpnt__cards__card__title {
+    line-height: 40px;
+  }
+
+  .four-card-cmpnt__cards__card__icon {
+    margin-top: auto;
+  }
+
+}
